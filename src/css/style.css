@@ -57,9 +57,10 @@ html, body {
 }
 
 .chatting-input {
-  font-size: 10px;
+  font-size: 14px;
   height: 100%;
   flex: 8;
+  padding-left: 10px;
   border: none;
 }
 
@@ -103,7 +104,7 @@ html, body {
 .message {
   border-radius: 5px;
   padding: 0.5rem;
-  font-size: 18px;
+  font-size: 14px;
   margin: 0 5px;
   flex: 7;
 }
