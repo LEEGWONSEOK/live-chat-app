@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 8080;
 
 io.on('connection', (socket) => {
   socket.on('chatting', (data) => {
-    console.log(data);
-    io.emit('chatting', `반갑다 ${data}`);
+    // console.log(data);
+    io.emit('chatting', data);
   });
 })
 
