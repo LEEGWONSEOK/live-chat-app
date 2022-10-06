@@ -11,7 +11,10 @@
 - **Language :**  `Javascript`    
 - **Server :**  `NodeJS` `ExpressJS` 
 
+
 <br>
+
+## *Project 설계*
 
 #### *핵심 기능 구현* ✓
 
@@ -21,10 +24,9 @@
 
 <br>
 
-## *Project 설계*
-
 ### *ERD Diagram*
 
+<br>
 
 ### *Directory*
 
