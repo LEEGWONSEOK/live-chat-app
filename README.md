@@ -16,23 +16,12 @@
 
 ## *Project 설계*
 
-#### *핵심 기능 구현* ✓
+### *핵심 기능 구현* ✓
 
-- 유저 로그인 / 회원가입 / 회원탈퇴 API 구현
-	- 회원가입시 생성되는 DRF를 바탕으로 로그인 시 유효성 검증
-	- 회원가입시 생성되는 DRF를 바탕으로 로그인 시 유효성 검증
+- `socket.io` 모듈 활용하여 웹소켓 통신 구현
 
 <br>
 
-### *ERD Diagram*
+### *구현 시뮬레이션*
 
-<br>
-
-### *Directory*
-
-```
-api
-
-app.js
-
-```
+![나의 동영상](https://user-images.githubusercontent.com/53293867/194282599-5cbe9cf8-7c0e-4f4d-b9e3-923ee65f2bb9.gif)
