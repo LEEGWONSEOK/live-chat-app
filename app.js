@@ -1,10 +1,11 @@
 const express = require('express');
 const http = require('http');
 const path = require('path');
-const app = express();
 const moment = require('moment');
-const server = http.createServer(app);
 const socketIO = require('socket.io');
+
+const app = express();
+const server = http.createServer(app);
 const io = socketIO(server);
 
 app.use(express.static(path.join(__dirname, 'src')));
@@ -16,9 +17,11 @@ io.on('connection', (socket) => {
     io.emit('chatting', {
       name,
       msg,
-      time: moment(new Date()).format('h:mm A')
+      time: moment(new Date()).format('h:mm A'),
     });
   });
-})
+});
+
+console.log('heelo');
 
 server.listen(PORT, () => console.log(`server is running ${PORT}`));

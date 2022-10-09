@@ -1,4 +1,4 @@
-"use strict"
+'use strict';
 
 const socket = io();
 
@@ -12,25 +12,24 @@ chatInput.addEventListener('keypress', (event) => {
   if (event.keyCode === 13) {
     send();
   }
-})
+});
 
 function send() {
   const param = {
     name: nickname.value,
-    msg: chatInput.value
-  }
+    msg: chatInput.value,
+  };
   socket.emit('chatting', param);
 }
 
 sendButton.addEventListener('click', send);
-
 
 socket.on('chatting', (data) => {
   const { name, msg, time } = data;
   const item = new LiModel(name, msg, time);
   item.makeLi();
   displayContainer.scrollTo(0, displayContainer.scrollHeight);
-})
+});
 
 function LiModel(name, msg, time) {
   this.name = name;
@@ -39,7 +38,7 @@ function LiModel(name, msg, time) {
 
   this.makeLi = () => {
     const li = document.createElement('li');
-    li.classList.add(nickname.value === this.name ? "sent" : "received")
+    li.classList.add(nickname.value === this.name ? 'sent' : 'received');
     const dom = `
           <span class="profile">
             <span class="user">${this.name}</span>
@@ -50,7 +49,7 @@ function LiModel(name, msg, time) {
           `;
     li.innerHTML = dom;
     chatList.appendChild(li);
-  } 
+  };
 }
 
-//console.log(socket);
+// console.log(socket);
