@@ -22,6 +22,6 @@ io.on('connection', (socket) => {
   });
 });
 
-console.log('heelo');
+// console.log('heelo');
 
 server.listen(PORT, () => console.log(`server is running ${PORT}`));
